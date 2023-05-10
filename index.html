@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mastermind</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Silkscreen&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/style.css">
+    
+</head>
+<div class="modal">
+    <div class="modal-message">
+        <h2>CONGRATULATIONS !!</h2>
+        <h2>YOU WIN !!</h2>
+    </div>
+</div>
+<body>
+   
+    
+    <div class="board">
+        <div class="answer-container flexer">
+            <div class="answer-box">
+                <div class="answer"></div>
+            </div>
+            <div class="button-container">
+                <div class="submit-btn">
+                    <h3 class="text">SUBMIT</h3>
+                </div>
+            </div>
+        </div>
+        
+        <div class="guess-container">
+            <div class="guess-row flexer">
+                <div class="guess-pegs flexer">
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                </div>
+                <div class="grade-pegs flexer">
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                </div>
+            </div>
+            <div class="guess-row flexer">
+                <div class="guess-pegs flexer">
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                </div>
+                <div class="grade-pegs flexer">
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                </div>
+            </div>
+            <div class="guess-row flexer">
+                <div class="guess-pegs flexer">
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                </div>
+                <div class="grade-pegs flexer">
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                </div>
+            </div>
+            <div class="guess-row flexer">
+                <div class="guess-pegs flexer">
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                </div>
+                <div class="grade-pegs flexer">
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                </div>
+            </div>
+            <div class="guess-row flexer">
+                <div class="guess-pegs flexer">
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                </div>
+                <div class="grade-pegs flexer">
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                </div>
+            </div>
+            <div class="guess-row flexer">
+                <div class="guess-pegs flexer">
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                </div>
+                <div class="grade-pegs flexer">
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                </div>
+            </div>
+            <div class="guess-row flexer">
+                <div class="guess-pegs flexer">
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                </div>
+                <div class="grade-pegs flexer">
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                </div>
+            </div>
+            <div class="guess-row flexer">
+                <div class="guess-pegs flexer">
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                </div>
+                <div class="grade-pegs flexer">
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                </div>
+            </div>
+            <div class="guess-row flexer">
+                <div class="guess-pegs flexer">
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                    <div class="guess-peg"></div>
+                </div>
+                <div class="grade-pegs flexer">
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                </div>
+            </div>
+            <div class="guess-row flexer">
+                <div class="guess-pegs flexer">
+                    <div class="guess-peg active"></div>
+                    <div class="guess-peg active"></div>
+                    <div class="guess-peg active"></div>
+                    <div class="guess-peg active"></div>
+                </div>
+                <div class="grade-pegs flexer first-grade">
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                    <div class="grade-peg"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="selection-container flexer">
+            <div class="selector-outer">
+                <div class="selector-inner red"></div>
+            </div>
+            <div class="selector-outer">
+                <div class="selector-inner green"></div>
+            </div>
+            <div class="selector-outer">
+                <div class="selector-inner yellow"></div>
+            </div>
+            <div class="selector-outer">
+                <div class="selector-inner black"></div>
+            </div>
+            <div class="selector-outer">
+                <div class="selector-inner white"></div>
+            </div>
+            <div class="selector-outer">
+                <div class="selector-inner orange"></div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#000066,grey);
+    font-family: 'Oswald', sans-serif;
+
+    font-family: 'Silkscreen', cursive;
+}
+
+.flexer {
+    display: flex;
+}
+
+.modal {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    display: none;
+}
+
+.modal-message {
+    width: 40%;
+    margin-left: 30%; 
+}
+
+.board {
+    background-color: red;
+    width: 30%;
+    min-width: 450px;
+    height: 96vh;
+    margin: 2vh auto;
+    background: linear-gradient(#0000ff, #0000cc);
+    box-shadow: 10px 10px 15px black;
+}
+
+/**** answer-container****/
+.answer-container {
+    width: 100%;
+    height: 10%;
+    padding-top: 2%;
+}
+
+.answer-box {
+    width: 70%;
+    height: 100%;
+}
+
+
+.answer {
+    width: 80%;
+    height: 80%;
+    border: 1px solid black;
+    margin: 0 auto;
+    background: linear-gradient(#0000ff, #0000cc);
+    box-shadow: 2px 0px 4px whitesmoke;
+}
+
+.button-container {
+    width: 30%;
+    height: 100%;
+
+}
+
+.submit-btn {
+    width: 80%;
+    height: 80%;
+    background: linear-gradient(#0000ff, #0000cc);
+    margin: auto;
+    text-align: center;
+    line-height: 200%;
+    box-shadow: 2px 2px 4px whitesmoke;
+
+}
+
+.text {
+    margin: 0 auto;
+}
+
+/**** guess-container****/
+.guess-container {
+    width: 100%;
+    height: 80%;
+}
+
+.guess-row {
+    box-sizing: border-box;
+    height: 10%;
+    width: 100%;
+    border-bottom: 1px solid rgb(42, 42, 213);
+}
+
+.guess-pegs {
+    height: 100%;
+    width: 70%;
+    
+    padding: 0 5%;
+} 
+
+.guess-peg {
+    width: 23%;
+    height: 100%;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    margin-left: 2%;
+    background: linear-gradient(#000066, blue);
+}
+
+.grade-pegs {
+    height: 100%;
+    width: 30%;
+    flex-wrap: wrap;
+    padding: 0 5%;
+    
+}
+.grade-peg {
+    box-sizing: border-box;
+    width: 37%;
+    height: 50%;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-left: 5%;
+    background: linear-gradient( blue,#000066);
+
+}
+
+/**** selection-container****/
+.selection-container {
+    width: 100%;
+    height: 10%;
+    padding-top: 2px;
+}
+
+.selector-outer {
+    width: 16%;
+    height: 82%;
+    border-radius: 50%;
+    margin: 0 .25px;
+    border: 1px solid black;
+}
+
+.selector-outer:hover{
+    border: 1px solid whitesmoke;
+}
+
+.selector-inner {
+    box-sizing: border-box;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    margin: 18% 18% 22% 22%;
+    border: 1px solid black;
+}
+
+.selector-inner:hover{
+    border: 1px solid whitesmoke;
+}
+
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+.yellow {
+    background-color: yellow;
+}
+.black {
+    background-color: black;
+}
+.white {
+    background-color: white;
+}
+.orange {
+    background-color: orange;
+}
